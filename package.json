@@ -4,6 +4,7 @@
   "description": "Blazing fast .d.ts modules for libraries",
   "author": "Alec Larson",
   "license": "MIT",
+  "type": "module",
   "repository": "alloc/vite-dts",
   "main": "dist/cjs/plugin.js",
   "module": "dist/esm/plugin.js",
@@ -38,8 +39,5 @@
     "types",
     "lib",
     "dts"
-  ],
-  "dependencies": {
-    "load-json-file": "^6.2.0"
-  }
+  ]
 }
