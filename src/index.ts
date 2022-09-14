@@ -50,6 +50,7 @@ export default function dts(): Plugin {
             const cjsModulePath = path.relative(outDir, pkg.main)
             const esModulePath = path.relative(outDir, pkg.module)
 
+            //@ts-ignore
             this.generateBundle = function ({ entryFileNames }) {
                 if (entryFileNames == cjsModulePath) {
                     this.emitFile({
